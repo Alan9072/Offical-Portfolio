@@ -18,6 +18,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
   </head>
   <body>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+  <div id="content" class="hidden-content">
     <div class="ultramaindiv">
       <div id="home" class="maindiv">
         <div class="mobilemenudiv">
@@ -512,7 +516,21 @@
     ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="index.js"></script>
-    
+    <script src="index.js" defer></script>
+    <script>
+      window.addEventListener("load", () => {
+        // Simulate waiting for assets/data (replace with your actual logic)
+        setTimeout(() => {
+          // Fade out loader and show content without interfering with other animations
+          document.getElementById("loader").classList.add("fade-out");
+          
+          // Show the content after a delay for the fade-out effect
+          setTimeout(() => {
+            document.getElementById("content").classList.remove("hidden-content");
+          }, 500); // Delay for loader fade-out
+        }, 1000); // Simulate a loading delay (this could be API calls or other tasks)
+      });
+    </script>
+  </div>
   </body>
 </html>
