@@ -759,15 +759,21 @@ svg{
 .project3{
     padding: 20px;
     background-color: rgb(4, 255, 29);
-    height:10cm;
+    height:9cm;
     width: 15cm;
     border-radius: 40px;
-    background: url(./projectimages/Screenshot\ 2024-07-05\ 124221.png);
+    background: url(./projectimages/YOUR\ HEALTH\ PARTNER.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
     background-size: 105%;
     transition: all 0.3s;
     display: flex;
     align-items: end;
+    border: 1px solid #297B10;
+}
+.project3 .github,.linkdiv {
+    border: 1px solid #297B10;
 }
 
 .innerdetails{
