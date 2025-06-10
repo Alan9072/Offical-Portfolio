@@ -772,7 +772,10 @@ svg{
     align-items: end;
     border: 1px solid #297B10;
 }
-.project3 .github,.linkdiv {
+.project3 .github {
+    border: 1px solid #297B10;
+}
+.project3 .linkdiv{
     border: 1px solid #297B10;
 }
 
